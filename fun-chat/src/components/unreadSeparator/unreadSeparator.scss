@@ -1,0 +1,18 @@
+@use "../../variables.scss";
+
+.separator {
+  position: relative;
+  height: 1px;
+  background: variables.$green-gradient;
+  margin: 10px 0;
+
+  &-text {
+    position: absolute;
+    background-color: variables.$text-black-color;
+    font-size: 12px;
+    right: 40%;
+    top: -8px;
+    color: variables.$pale-green;
+    padding: 0 5px;
+  }
+}

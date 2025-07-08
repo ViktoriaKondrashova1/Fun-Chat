@@ -1,0 +1,12 @@
+@use "../../variables.scss";
+
+.unread-circle {
+  border-radius: 50%;
+  border: 1px solid variables.$pale-green;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  margin-left: auto;
+  font-size: 12px;
+  text-align: center;
+}

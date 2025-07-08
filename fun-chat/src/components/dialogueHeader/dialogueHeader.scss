@@ -1,0 +1,46 @@
+@use "../../variables.scss";
+
+.dialogue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.online-status {
+  background: variables.$green-gradient;
+  background-clip: text;
+  color: transparent;
+}
+
+.offline-status {
+  color: gray;
+}
+
+.header-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header-user-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.header-user-online {
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: variables.$green-gradient;
+  left: 28px;
+  top: 29px;
+}
+
+@media screen and (max-width: variables.$media-mob) {
+  .dialogue-header {
+    padding: 5px;
+  }
+}

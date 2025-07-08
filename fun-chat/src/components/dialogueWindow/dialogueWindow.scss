@@ -1,0 +1,25 @@
+@use "../../variables.scss";
+
+.dialogue-window {
+  max-height: 500px;
+  overflow-y: scroll;
+  padding: 10px 20px;
+
+  &-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 2px solid variables.$pale-green;
+    border-radius: variables.$border-radius;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: variables.$media-mob) {
+  .dialogue-window {
+    padding: 5px;
+  }
+}

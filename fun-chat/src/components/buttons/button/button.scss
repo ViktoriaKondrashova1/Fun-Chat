@@ -1,0 +1,35 @@
+@use "../../../variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: variables.$button-padding;
+  border-radius: variables.$border-radius;
+  background-color: variables.$light-black;
+  color: variables.$text-color;
+  border: 2px solid transparent;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    border-color 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$green-gradient;
+    background-clip: text;
+    color: transparent;
+    border: 2px solid variables.$pale-green;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+
+    &:hover {
+      color: variables.$text-color;
+      background: variables.$light-black;
+      border: 2px solid transparent;
+    }
+  }
+}

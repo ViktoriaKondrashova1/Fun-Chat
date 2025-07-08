@@ -1,0 +1,64 @@
+@use "../../variables.scss";
+
+.message {
+  display: flex;
+  flex-direction: column;
+  border-radius: variables.$border-radius;
+  padding: 5px 15px;
+  width: max-content;
+  max-width: 70%;
+  margin: 5px 0;
+  box-sizing: border-box;
+
+  p {
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .contact-name {
+    font-size: 12px;
+  }
+
+  .check-time-wrap {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+  }
+}
+
+.contact-message {
+  background-color: variables.$light-black;
+
+  & .contact-name {
+    color: variables.$pale-green;
+  }
+}
+
+.user-message {
+  background: variables.$green-gradient;
+  color: variables.$text-black-color;
+  justify-self: right;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  p {
+    color: variables.$text-black-color;
+  }
+
+  & .contact-name {
+    color: variables.$text-color;
+  }
+}

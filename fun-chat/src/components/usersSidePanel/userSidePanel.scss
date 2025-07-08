@@ -1,0 +1,27 @@
+@use "../../variables.scss";
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: variables.$medium-black;
+  padding: 20px 10px;
+  border-bottom-left-radius: 30px;
+}
+
+.users-container {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.no-users {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: variables.$media-mob) {
+  .side-panel {
+    padding: 5px;
+  }
+}

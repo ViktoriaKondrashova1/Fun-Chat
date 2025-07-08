@@ -1,0 +1,51 @@
+@use "../../variables.scss";
+
+.user-display {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+  border-radius: variables.$border-radius;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 2px solid variables.$pale-green;
+  }
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.user-online {
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: variables.$green-gradient;
+  left: 35px;
+  top: 32px;
+}
+
+@media screen and (max-width: variables.$media-mob) {
+  .user-display {
+    gap: 5px;
+  }
+
+  .user-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .user-online {
+    width: 5px;
+    height: 5px;
+    left: 19px;
+    top: 20px;
+  }
+}

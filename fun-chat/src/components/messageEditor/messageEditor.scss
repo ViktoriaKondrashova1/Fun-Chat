@@ -1,0 +1,61 @@
+@use "../../variables.scss";
+
+.editor {
+  display: grid;
+  grid-template-columns: 85% 10%;
+  gap: 20px;
+  background-color: variables.$medium-black;
+  padding: 10px 20px;
+  border-bottom-right-radius: 30px;
+  align-items: center;
+}
+
+.send-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: variables.$green-gradient;
+  transition: transform 0.3s ease;
+
+  & div {
+    position: relative;
+    width: 3px;
+    height: 20px;
+    background-color: variables.$text-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 50%;
+      transform: translateX(-50%);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid variables.$text-color;
+    }
+  }
+
+  &:hover {
+    background: variables.$green-gradient;
+    transform: scale(1.1);
+  }
+
+  &:disabled {
+    &:hover {
+      background: variables.$green-gradient;
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (max-width: variables.$media-mob) {
+  .send-button {
+    height: 35px;
+    width: 35px;
+  }
+
+  .editor {
+    padding: 10px 5px;
+    gap: 5px;
+    grid-template-columns: 80% 10%;
+  }
+}

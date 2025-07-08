@@ -1,0 +1,18 @@
+@use "../../variables.scss";
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 20px;
+    background-color: transparent;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: variables.$button-padding 30px;
+  }
+}

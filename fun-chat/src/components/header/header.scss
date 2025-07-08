@@ -1,0 +1,30 @@
+@use "../../variables.scss";
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: variables.$medium-black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  &-text {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-wrap {
+    display: flex;
+    gap: 10px;
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

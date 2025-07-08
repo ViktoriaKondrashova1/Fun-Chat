@@ -1,0 +1,14 @@
+@use "../../variables.scss";
+
+.dialogue-panel {
+  height: 500px;
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: variables.$media-mob) {
+  .dialogue-panel {
+    padding-top: 5px;
+  }
+}

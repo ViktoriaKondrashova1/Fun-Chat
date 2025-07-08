@@ -1,0 +1,6 @@
+@use "../../variables.scss";
+
+.main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}

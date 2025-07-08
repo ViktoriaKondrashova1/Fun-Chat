@@ -1,0 +1,8 @@
+@use "../../variables.scss";
+
+.error-message {
+  background: variables.$green-gradient;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}

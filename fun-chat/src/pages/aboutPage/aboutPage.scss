@@ -1,0 +1,27 @@
+@use "../../variables.scss";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+
+  &-title {
+    background: variables.$green-gradient;
+    background-clip: text;
+    color: transparent;
+    font-size: 26px;
+  }
+
+  &-link {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$pale-green;
+    }
+  }
+}

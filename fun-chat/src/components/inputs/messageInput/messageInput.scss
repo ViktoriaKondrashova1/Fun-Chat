@@ -1,0 +1,16 @@
+@use "../../../variables.scss";
+
+.message-input {
+  padding: variables.$button-padding;
+  background: transparent;
+  resize: none;
+  border-radius: 10px;
+  transition:
+    transform 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+
+  &:focus {
+    border: 2px solid variables.$pale-green;
+    outline: none;
+  }
+}

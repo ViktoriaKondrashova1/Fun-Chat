@@ -1,0 +1,16 @@
+@use "../../variables.scss";
+
+.message-menu {
+  position: absolute;
+  left: -25px;
+  flex-direction: column;
+}
+
+.menu-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

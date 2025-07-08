@@ -1,0 +1,20 @@
+@use "../../../variables.scss";
+
+.input {
+  width: 100%;
+  border-radius: variables.$border-radius;
+  padding: variables.$button-padding;
+  background-color: variables.$light-black;
+  color: variables.$text-color;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    transform 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+
+  &:focus {
+    border: 2px solid variables.$pale-green;
+    outline: none;
+  }
+}
